@@ -1,0 +1,2 @@
+# FS-coin
+FS coin
