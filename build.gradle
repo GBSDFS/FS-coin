@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'jacoco'
+    id 'com.diffplug.gradle.spotless' version '4.5.1'
+    id 'io.codearte.nexus-staging' version '0.22.0'
+    id 'de.marcphilipp.nexus-publish' version '0.4.0'
+    id 'de.undercouch.download' version '4.1.1'
+    id 'com.jfrog.bintray' version '1.8.5'
+    id 'org.ajoberstar.git-publish' version '3.0.0'
+}
+
+ext {
+    bouncycastleVersion = '1.65'
+}
+
+description 'fscoin block base project.'
+
+
+bintrayUpload {
+    enabled = false
+}
