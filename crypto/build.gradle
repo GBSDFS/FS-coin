@@ -1,0 +1,13 @@
+description 'fscoin block crypto library'
+
+dependencies {
+    compile project(':abi'),
+            project(':rlp'),
+            project(':utils'),
+            "org.slf4j:slf4j-api:$slf4jVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+}
+
+configurations { testArtifacts.extendsFrom testRuntime }
+
+artifacts { testArtifacts testsJar }
